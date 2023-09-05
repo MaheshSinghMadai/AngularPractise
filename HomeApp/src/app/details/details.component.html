@@ -13,4 +13,22 @@
         <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
       </ul>
     </section>
+
+    <section class="listing-apply">
+      <h2 class="section-heading">Apply Now to live here</h2>
+      <form [formGroup] = "appplyForm" (submit)="submitApplication" >
+
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" formControlName="firstName" autocomplete="on">
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" formControlName="lastName" autocomplete="on">
+
+        <label for="email">Email</label>
+        <input id="email" type="text" formControlName="email" autocomplete="on">
+
+        <button type="submit" class="primary">Apply Now</button>
+
+      </form>
+    </section>
   </article>

@@ -17,5 +17,7 @@ import { RouterLink, RouterOutlet} from '@angular/router'
 export class HousingLocationComponent {
 
   // ! --> expecting value to be passed
+  // passing data to child component
   @Input() housingLocation!: HousingLocation;
+  
 }
