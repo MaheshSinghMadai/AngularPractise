@@ -123,6 +123,6 @@ export class HousingService {
   }
 
   submitApplication(firstName: string, lastName: string, email:string){
-    console.log('Home Application received: FirstName : ${firstName}, LastName :${lastName}, Email:${email}');
+    console.log(`Home Application received: FirstName : ${firstName}, LastName : ${lastName}, Email:${email}`);
   }
 }
